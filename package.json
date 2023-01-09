@@ -1,0 +1,23 @@
+{
+  "name": "datadog-apm-test",
+  "version": "1.0.0",
+  "description": "APM Sample for Datadog Demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taiji",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taijihagino/datadog-apm-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taijihagino/datadog-apm-test/issues"
+  },
+  "homepage": "https://github.com/taijihagino/datadog-apm-test#readme"
+}
