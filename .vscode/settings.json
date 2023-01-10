@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/5e64aa3b-582d-47e2-a518-a49de2c66a19/AppServices/subscriptions/5e64aa3b-582d-47e2-a518-a49de2c66a19/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/datadog-apm-test",
+    "appService.deploySubpath": "."
+}

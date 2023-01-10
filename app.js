@@ -8,14 +8,13 @@ app.get("/", function (req, res) {
   return res.send("Hello Datadog!!");
 });
 
-function alertMsg(){
-    console.log(msgtext);
-}
-
 app.get("/datadog", function (req, res) {
-    msgtext = "遅延処理を発生させました";
-    setTimeout(alertMsg, 30000);
-    return res.send("Datadogのテストだよ");
+  (async () => {
+    console.time('Waited for');
+    await new Promise(resolve => setTimeout(resolve, 15000));
+    console.timeLog('Waited for');
+    return res.send("15秒遅延させてから画面を表示しました");
+  })();
 });
 
 app.use(function (req, res, next) {
